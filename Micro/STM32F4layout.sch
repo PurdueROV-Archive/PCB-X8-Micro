@@ -1384,6 +1384,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <sheets>
 <sheet>
 <plain>
+<text x="-86.36" y="78.74" size="1.778" layer="95">I2C</text>
+<text x="55.88" y="73.66" size="1.778" layer="95">I2C</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-83.82" y="83.82"/>
