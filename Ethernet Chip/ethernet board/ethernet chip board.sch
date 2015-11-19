@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5110,7 +5110,7 @@ W = angled&lt;p&gt;
 <part name="U$4" library="EthernetChip" deviceset="553-2382-1-ND" device=""/>
 <part name="R15" library="resistor" deviceset="R-US_" device="R0603" value="27R"/>
 <part name="R19" library="resistor" deviceset="R-US_" device="R0603" value="27R"/>
-<part name="R20" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R20" library="resistor" deviceset="R-US_" device="R0603" value="1.5k"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SV1" library="con-lsta" deviceset="FE07-2" device=""/>
