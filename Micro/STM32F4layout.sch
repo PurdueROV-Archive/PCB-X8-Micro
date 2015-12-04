@@ -9269,8 +9269,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="SV1" gate="G$1" x="160.02" y="-162.56"/>
 <instance part="GND17" gate="1" x="-439.42" y="-261.62"/>
 <instance part="+3V8" gate="G$1" x="-386.08" y="-226.06"/>
-<instance part="R9" gate="G$1" x="-45.72" y="-63.5" rot="R90"/>
-<instance part="+3V9" gate="G$1" x="-45.72" y="-53.34"/>
+<instance part="R9" gate="G$1" x="-12.7" y="-73.66" rot="R90"/>
+<instance part="+3V9" gate="G$1" x="-12.7" y="-68.58"/>
 <instance part="R10" gate="G$1" x="-33.02" y="-68.58" rot="R90"/>
 <instance part="+3V10" gate="G$1" x="-33.02" y="-58.42"/>
 </instances>
@@ -9563,7 +9563,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<wire x1="-45.72" y1="-55.88" x2="-45.72" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-71.12" x2="-12.7" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -9958,6 +9958,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="152.4" y1="-177.8" x2="149.86" y2="-177.8" width="0.1524" layer="91"/>
 <label x="142.24" y="-177.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB6"/>
+<wire x1="-71.12" y1="-68.58" x2="-55.88" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-60.96" y="-68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CAN2_RX" class="0">
 <segment>
@@ -10025,15 +10030,41 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="R10" gate="G$1" pin="1"/>
 <junction x="-33.02" y="-73.66"/>
 <wire x1="-33.02" y1="-73.66" x2="-22.86" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-60.96" y="-73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="35"/>
+<wire x1="152.4" y1="-142.24" x2="149.86" y2="-142.24" width="0.1524" layer="91"/>
+<label x="139.7" y="-142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C1_SCL" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB6"/>
-<wire x1="-71.12" y1="-68.58" x2="-45.72" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<junction x="-45.72" y="-68.58"/>
-<wire x1="-45.72" y1="-68.58" x2="-43.18" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-78.74" x2="-38.1" y2="-78.74" width="0.1524" layer="91"/>
+<label x="-27.94" y="-78.74" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$2" pin="PB8"/>
+<wire x1="-12.7" y1="-78.74" x2="-71.12" y2="-78.74" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-78.74"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="33"/>
+<wire x1="152.4" y1="-144.78" x2="149.86" y2="-144.78" width="0.1524" layer="91"/>
+<label x="139.7" y="-144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MAIN_CAMERA_SERVO_MOTOR_PWM" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA0"/>
+<wire x1="-71.12" y1="119.38" x2="-50.8" y2="119.38" width="0.1524" layer="91"/>
+<label x="-66.04" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ALT_CAMERA_SERVO_MOTOR_PWM" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA3"/>
+<wire x1="-71.12" y1="104.14" x2="-50.8" y2="104.14" width="0.1524" layer="91"/>
+<label x="-66.04" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
