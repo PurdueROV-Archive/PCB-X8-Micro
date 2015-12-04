@@ -9175,6 +9175,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="SV1" library="Connectors" deviceset="FE18-2" device=""/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
+<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="4.7K"/>
+<part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
+<part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="4.7K"/>
+<part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9265,6 +9269,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="SV1" gate="G$1" x="160.02" y="-162.56"/>
 <instance part="GND17" gate="1" x="-439.42" y="-261.62"/>
 <instance part="+3V8" gate="G$1" x="-386.08" y="-226.06"/>
+<instance part="R9" gate="G$1" x="-45.72" y="-63.5" rot="R90"/>
+<instance part="+3V9" gate="G$1" x="-45.72" y="-53.34"/>
+<instance part="R10" gate="G$1" x="-33.02" y="-68.58" rot="R90"/>
+<instance part="+3V10" gate="G$1" x="-33.02" y="-58.42"/>
 </instances>
 <busses>
 </busses>
@@ -9552,6 +9560,16 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="167.64" y1="-182.88" x2="172.72" y2="-182.88" width="0.1524" layer="91"/>
 <label x="170.18" y="-182.88" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<wire x1="-45.72" y1="-55.88" x2="-45.72" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="+3V10" gate="G$1" pin="+3V3"/>
+<wire x1="-33.02" y1="-60.96" x2="-33.02" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -9573,7 +9591,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="U$2" gate="G$1" pin="P$2"/>
 </segment>
 </net>
-<net name="I2C_SCL" class="0">
+<net name="I2C3_SCL" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PA8"/>
 <wire x1="-71.12" y1="78.74" x2="-48.26" y2="78.74" width="0.1524" layer="91"/>
@@ -9588,7 +9606,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <label x="142.24" y="-165.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="I2C_SDA" class="0">
+<net name="I2C3_SDA" class="0">
 <segment>
 <pinref part="U$1" gate="G$3" pin="PC9"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -9931,11 +9949,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </net>
 <net name="CAN2_TX" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB6"/>
-<wire x1="-71.12" y1="-68.58" x2="-55.88" y2="-68.58" width="0.1524" layer="91"/>
-<label x="-60.96" y="-68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$6" gate="G$1" pin="TXD"/>
 <wire x1="-86.36" y1="-330.2" x2="-91.44" y2="-330.2" width="0.1524" layer="91"/>
 <label x="-93.98" y="-330.2" size="1.778" layer="95"/>
@@ -9989,6 +10002,38 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="SV1" gate="G$1" pin="31"/>
 <wire x1="152.4" y1="-147.32" x2="149.86" y2="-147.32" width="0.1524" layer="91"/>
 <label x="139.7" y="-147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SONAR_PWM" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA5"/>
+<wire x1="-71.12" y1="93.98" x2="-58.42" y2="93.98" width="0.1524" layer="91"/>
+<label x="-68.58" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SONAR_DAC" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA4"/>
+<wire x1="-71.12" y1="99.06" x2="-58.42" y2="99.06" width="0.1524" layer="91"/>
+<label x="-68.58" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C1_SDA" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB7"/>
+<wire x1="-71.12" y1="-73.66" x2="-33.02" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<junction x="-33.02" y="-73.66"/>
+<wire x1="-33.02" y1="-73.66" x2="-22.86" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="I2C1_SCL" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB6"/>
+<wire x1="-71.12" y1="-68.58" x2="-45.72" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<junction x="-45.72" y="-68.58"/>
+<wire x1="-45.72" y1="-68.58" x2="-43.18" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
