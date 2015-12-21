@@ -8221,6 +8221,11 @@ W = angled&lt;p&gt;
 <wire x1="848.36" y1="381" x2="866.14" y2="381" width="0.1524" layer="91"/>
 <wire x1="866.14" y1="381" x2="866.14" y2="373.38" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SV3" gate="G$1" pin="1"/>
+<wire x1="497.84" y1="154.94" x2="487.68" y2="154.94" width="0.1524" layer="91"/>
+<label x="490.22" y="154.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -9009,11 +9014,6 @@ W = angled&lt;p&gt;
 <pinref part="U$1" gate="G$3" pin="PC0"/>
 <wire x1="581.66" y1="510.54" x2="591.82" y2="510.54" width="0.1524" layer="91"/>
 <label x="586.74" y="510.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SV3" gate="G$1" pin="1"/>
-<wire x1="497.84" y1="154.94" x2="487.68" y2="154.94" width="0.1524" layer="91"/>
-<label x="490.22" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC2" class="0">
