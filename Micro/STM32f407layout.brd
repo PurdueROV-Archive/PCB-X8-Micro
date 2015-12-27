@@ -18,10 +18,10 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -4711,10 +4711,11 @@ design rules under a new name.</description>
 <wire x1="41.939528125" y1="52.154190625" x2="41.939528125" y2="52.688603125" width="0.254" layer="1"/>
 <wire x1="41.939528125" y1="52.688603125" x2="43.540146875" y2="54.289221875" width="0.254" layer="1"/>
 <wire x1="43.540146875" y1="54.289221875" x2="44.9056" y2="54.289221875" width="0.254" layer="1"/>
-<wire x1="44.9056" y1="54.289221875" x2="45.82478125" y2="54.289221875" width="0.254" layer="1"/>
-<wire x1="45.82478125" y1="54.289221875" x2="55.2664375" y2="63.730878125" width="0.254" layer="1"/>
 <wire x1="45.036109375" y1="52.71815625" x2="45.036109375" y2="54.1587125" width="0.254" layer="1"/>
 <wire x1="45.036109375" y1="54.1587125" x2="44.9056" y2="54.289221875" width="0.254" layer="1"/>
+<wire x1="44.9056" y1="54.289221875" x2="53.995165625" y2="54.289221875" width="0.254" layer="1"/>
+<wire x1="53.995165625" y1="54.289221875" x2="55.2664375" y2="55.56049375" width="0.254" layer="1"/>
+<wire x1="55.2664375" y1="63.730878125" x2="55.2664375" y2="55.56049375" width="0.254" layer="1"/>
 </signal>
 <signal name="NRST">
 <contactref element="U$4" pad="15"/>
