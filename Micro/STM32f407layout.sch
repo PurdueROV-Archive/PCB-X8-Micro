@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16223,14 +16223,19 @@ Connection</text>
 </net>
 <net name="SONAR_PWM" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA5"/>
-<wire x1="439.42" y1="485.14" x2="452.12" y2="485.14" width="0.1524" layer="91"/>
-<label x="441.96" y="485.14" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SV4" gate="G$1" pin="7"/>
 <wire x1="500.38" y1="104.14" x2="495.3" y2="104.14" width="0.1524" layer="91"/>
 <label x="485.14" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="10"/>
+<wire x1="561.34" y1="190.5" x2="568.96" y2="190.5" width="0.1524" layer="91"/>
+<label x="563.88" y="190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB3"/>
+<wire x1="439.42" y1="337.82" x2="454.66" y2="337.82" width="0.1524" layer="91"/>
+<label x="441.96" y="337.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SONAR_DAC" class="0">
@@ -16288,26 +16293,36 @@ Connection</text>
 </net>
 <net name="MAIN_CAMERA_SERVO_MOTOR_PWM" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA0"/>
-<wire x1="439.42" y1="510.54" x2="459.74" y2="510.54" width="0.1524" layer="91"/>
-<label x="444.5" y="510.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SV4" gate="G$1" pin="11"/>
 <wire x1="500.38" y1="109.22" x2="495.3" y2="109.22" width="0.1524" layer="91"/>
 <label x="497.84" y="109.22" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB4"/>
+<wire x1="439.42" y1="332.74" x2="454.66" y2="332.74" width="0.1524" layer="91"/>
+<label x="441.96" y="332.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="11"/>
+<wire x1="546.1" y1="193.04" x2="538.48" y2="193.04" width="0.1524" layer="91"/>
+<label x="535.94" y="195.58" size="1.778" layer="95" rot="R270"/>
+</segment>
 </net>
 <net name="ALT_CAMERA_SERVO_MOTOR_PWM" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PA3"/>
-<wire x1="439.42" y1="495.3" x2="459.74" y2="495.3" width="0.1524" layer="91"/>
-<label x="444.5" y="495.3" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="SV4" gate="G$1" pin="12"/>
 <wire x1="515.62" y1="109.22" x2="523.24" y2="109.22" width="0.1524" layer="91"/>
 <label x="515.62" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB9"/>
+<wire x1="439.42" y1="307.34" x2="457.2" y2="307.34" width="0.1524" layer="91"/>
+<label x="441.96" y="307.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="16"/>
+<wire x1="561.34" y1="198.12" x2="568.96" y2="198.12" width="0.1524" layer="91"/>
+<label x="563.88" y="198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -16458,24 +16473,7 @@ Connection</text>
 <wire x1="38.1" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PB9" class="0">
-<segment>
-<pinref part="SV1" gate="G$1" pin="16"/>
-<wire x1="561.34" y1="198.12" x2="568.96" y2="198.12" width="0.1524" layer="91"/>
-<label x="563.88" y="198.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$2" pin="PB9"/>
-<wire x1="439.42" y1="307.34" x2="457.2" y2="307.34" width="0.1524" layer="91"/>
-<label x="441.96" y="307.34" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="PD6" class="0">
-<segment>
-<pinref part="SV1" gate="G$1" pin="10"/>
-<wire x1="561.34" y1="190.5" x2="568.96" y2="190.5" width="0.1524" layer="91"/>
-<label x="563.88" y="190.5" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$4" pin="PD6"/>
 <wire x1="586.74" y1="317.5" x2="604.52" y2="317.5" width="0.1524" layer="91"/>
@@ -16588,18 +16586,6 @@ Connection</text>
 <pinref part="U$1" gate="G$4" pin="PD5"/>
 <wire x1="586.74" y1="322.58" x2="604.52" y2="322.58" width="0.1524" layer="91"/>
 <label x="589.28" y="322.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PB4" class="0">
-<segment>
-<pinref part="SV1" gate="G$1" pin="11"/>
-<wire x1="546.1" y1="193.04" x2="538.48" y2="193.04" width="0.1524" layer="91"/>
-<label x="538.48" y="193.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$2" pin="PB4"/>
-<wire x1="439.42" y1="332.74" x2="454.66" y2="332.74" width="0.1524" layer="91"/>
-<label x="441.96" y="332.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA10" class="0">
@@ -16746,7 +16732,7 @@ Connection</text>
 <label x="589.28" y="307.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PA5" class="0">
+<net name="PA6" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PA6"/>
 <wire x1="439.42" y1="480.06" x2="452.12" y2="480.06" width="0.1524" layer="91"/>
@@ -17013,13 +16999,6 @@ Connection</text>
 <pinref part="U$1" gate="G$2" pin="PB15"/>
 <wire x1="439.42" y1="276.86" x2="457.2" y2="276.86" width="0.1524" layer="91"/>
 <label x="441.96" y="276.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PB3" class="0">
-<segment>
-<pinref part="U$1" gate="G$2" pin="PB3"/>
-<wire x1="439.42" y1="337.82" x2="454.66" y2="337.82" width="0.1524" layer="91"/>
-<label x="441.96" y="337.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB2" class="0">
@@ -17428,6 +17407,27 @@ Connection</text>
 <pinref part="RN1" gate="A" pin="2"/>
 <pinref part="U$4" gate="G$1" pin="RXD1/MODE1"/>
 <wire x1="850.9" y1="160.02" x2="858.52" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PA5" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA5"/>
+<wire x1="439.42" y1="485.14" x2="452.12" y2="485.14" width="0.1524" layer="91"/>
+<label x="441.96" y="485.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PA0" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA0"/>
+<wire x1="439.42" y1="510.54" x2="459.74" y2="510.54" width="0.1524" layer="91"/>
+<label x="444.5" y="510.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PA3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA3"/>
+<wire x1="439.42" y1="495.3" x2="459.74" y2="495.3" width="0.1524" layer="91"/>
+<label x="444.5" y="495.3" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
