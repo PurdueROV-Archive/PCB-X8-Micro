@@ -16508,20 +16508,20 @@ Connection</text>
 <junction x="45.72" y="88.9"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="T1"/>
-<wire x1="447.04" y1="139.7" x2="441.96" y2="139.7" width="0.1524" layer="91"/>
-<label x="441.96" y="139.7" size="1.778" layer="95"/>
-<wire x1="441.96" y1="139.7" x2="441.96" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="T2"/>
-<wire x1="441.96" y1="132.08" x2="447.04" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="441.96" y1="132.08" x2="441.96" y2="124.46" width="0.1524" layer="91"/>
-<junction x="441.96" y="132.08"/>
+<label x="441.96" y="124.46" size="1.778" layer="95"/>
 <pinref part="U$8" gate="G$1" pin="T3"/>
 <wire x1="441.96" y1="124.46" x2="447.04" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="441.96" y1="124.46" x2="441.96" y2="116.84" width="0.1524" layer="91"/>
-<junction x="441.96" y="124.46"/>
 <pinref part="U$8" gate="G$1" pin="T4"/>
 <wire x1="441.96" y1="116.84" x2="447.04" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="441.96" y1="116.84" x2="441.96" y2="109.22" width="0.1524" layer="91"/>
+<junction x="441.96" y="116.84"/>
+<pinref part="U$8" gate="G$1" pin="T5"/>
+<wire x1="441.96" y1="109.22" x2="447.04" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="441.96" y1="109.22" x2="441.96" y2="101.6" width="0.1524" layer="91"/>
+<junction x="441.96" y="109.22"/>
+<pinref part="U$8" gate="G$1" pin="T6"/>
+<wire x1="441.96" y1="101.6" x2="447.04" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OSC_IN" class="0">
@@ -16871,7 +16871,7 @@ Connection</text>
 <label x="589.28" y="347.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PC11" class="0">
+<net name="TEMP_BACKUP" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="2"/>
 <wire x1="480.06" y1="226.06" x2="487.68" y2="226.06" width="0.1524" layer="91"/>
@@ -16881,6 +16881,11 @@ Connection</text>
 <pinref part="U$1" gate="G$3" pin="PC11"/>
 <wire x1="581.66" y1="454.66" x2="591.82" y2="454.66" width="0.1524" layer="91"/>
 <label x="586.74" y="454.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$2" pin="T25"/>
+<wire x1="543.56" y1="139.7" x2="535.94" y2="139.7" width="0.1524" layer="91"/>
+<label x="528.32" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC10" class="0">
