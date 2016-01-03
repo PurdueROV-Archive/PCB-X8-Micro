@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16624,11 +16624,6 @@ Connection</text>
 <pinref part="U$8" gate="G$2" pin="T34"/>
 <wire x1="571.5" y1="147.32" x2="586.74" y2="147.32" width="0.1524" layer="91"/>
 <label x="576.58" y="147.32" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$8" gate="G$2" pin="T40"/>
-<wire x1="571.5" y1="101.6" x2="581.66" y2="101.6" width="0.1524" layer="91"/>
-<label x="574.04" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C1_SDA" class="0">

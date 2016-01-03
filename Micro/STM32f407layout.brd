@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4118,8 +4118,6 @@ design rules under a new name.</description>
 <contactref element="U$8" pad="T34"/>
 <wire x1="52.58884375" y1="24.503040625" x2="52.58884375" y2="5.6464625" width="0.254" layer="1"/>
 <wire x1="52.58884375" y1="5.6464625" x2="52.563659375" y2="5.621278125" width="0.254" layer="1"/>
-<contactref element="U$8" pad="T40"/>
-<wire x1="52.58884375" y1="5.6464625" x2="57.363659375" y2="5.621278125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I2C1_SDA">
 <contactref element="U$1" pad="P93"/>
