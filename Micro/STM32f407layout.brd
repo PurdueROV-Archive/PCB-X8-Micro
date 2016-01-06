@@ -35,7 +35,7 @@
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
@@ -159,75 +159,127 @@
 <wire x1="17.690478125" y1="93.760465625" x2="79.30206875" y2="94.01281875" width="0.4064" layer="20"/>
 <wire x1="79.30206875" y1="94.01281875" x2="79.153096875" y2="3.06910625" width="0.4064" layer="20"/>
 <wire x1="79.153096875" y1="3.06910625" x2="17.797209375" y2="2.96849375" width="0.4064" layer="20"/>
-<text x="41.050640625" y="48.384834375" size="0.6096" layer="121">PD8</text>
-<text x="34.51344375" y="47.65486875" size="0.6096" layer="121" rot="R90">PD9</text>
-<text x="34.501071875" y="44.75838125" size="0.6096" layer="121" rot="R90">PD12</text>
-<text x="40.97629375" y="45.620203125" size="0.6096" layer="121">PD11</text>
-<text x="34.55045" y="42.067553125" size="0.6096" layer="121" rot="R90">PD14</text>
-<text x="40.986684375" y="42.5315375" size="0.6096" layer="121">PD13</text>
-<text x="34.482584375" y="39.89666875" size="0.6096" layer="121" rot="R90">PC6</text>
-<text x="40.94304375" y="40.115925" size="0.6096" layer="121">PD15</text>
-<text x="34.382634375" y="37.2895375" size="0.6096" layer="121" rot="R90">PC8</text>
-<text x="34.43091875" y="34.555175" size="0.6096" layer="121" rot="R90">SCL2</text>
-<text x="41.21145" y="37.75204375" size="0.6096" layer="121">PC7</text>
-<text x="32.7159375" y="32.19254375" size="0.6096" layer="121" rot="R90">PA11</text>
-<text x="35.035490625" y="28.24325" size="0.6096" layer="121">+3V3</text>
-<text x="38.18524375" y="28.228315625" size="0.6096" layer="121">GND</text>
-<text x="40.90733125" y="35.87871875" size="0.6096" layer="121">SDA2</text>
-<text x="41.1250375" y="30.662525" size="0.6096" layer="121">PA9</text>
-<text x="41.000653125" y="26.122225" size="0.6096" layer="121" rot="R90">PC11</text>
-<text x="40.8884125" y="23.368128125" size="0.6096" layer="121" rot="R90">Temp</text>
-<text x="44.09633125" y="21.83015625" size="0.6096" layer="121">PD0</text>
-<text x="44.185153125" y="29.020540625" size="0.6096" layer="121">PC12</text>
-<text x="46.858275" y="29.004565625" size="0.6096" layer="121">PD1</text>
-<text x="46.58959375" y="21.779534375" size="0.6096" layer="121">PD2</text>
-<text x="48.786975" y="29.004565625" size="0.6096" layer="121">ShiftEn</text>
-<text x="48.55205" y="21.7844625" size="0.6096" layer="121">ShiftClk</text>
-<text x="50.9706875" y="29.917821875" size="0.6096" layer="121">ShiftDat</text>
-<text x="52.202434375" y="22.481159375" size="0.6096" layer="121" rot="R270">SonarPwm</text>
+<text x="41.050640625" y="48.384834375" size="0.6096" layer="21">PD8</text>
+<text x="34.51344375" y="47.65486875" size="0.6096" layer="21" rot="R90">PD9</text>
+<text x="34.501071875" y="44.75838125" size="0.6096" layer="21" rot="R90">PD12</text>
+<text x="40.97629375" y="45.620203125" size="0.6096" layer="21">PD11</text>
+<text x="34.55045" y="42.067553125" size="0.6096" layer="21" rot="R90">PD14</text>
+<text x="40.986684375" y="42.5315375" size="0.6096" layer="21">PD13</text>
+<text x="34.482584375" y="39.89666875" size="0.6096" layer="21" rot="R90">PC6</text>
+<text x="40.94304375" y="40.115925" size="0.6096" layer="21">PD15</text>
+<text x="34.382634375" y="37.2895375" size="0.6096" layer="21" rot="R90">PC8</text>
+<text x="34.43091875" y="34.555175" size="0.6096" layer="21" rot="R90">SCL2</text>
+<text x="41.21145" y="37.75204375" size="0.6096" layer="21">PC7</text>
+<text x="32.7159375" y="32.19254375" size="0.6096" layer="21" rot="R90">PA11</text>
+<text x="35.035490625" y="28.24325" size="0.6096" layer="21">+3V3</text>
+<text x="38.18524375" y="28.228315625" size="0.6096" layer="21">GND</text>
+<text x="40.90733125" y="35.87871875" size="0.6096" layer="21">SDA2</text>
+<text x="41.1250375" y="30.662525" size="0.6096" layer="21">PA9</text>
+<text x="41.000653125" y="26.122225" size="0.6096" layer="21" rot="R90">PC11</text>
+<text x="40.8884125" y="23.368128125" size="0.6096" layer="21" rot="R90">Temp</text>
+<text x="44.09633125" y="21.83015625" size="0.6096" layer="21">PD0</text>
+<text x="44.185153125" y="29.020540625" size="0.6096" layer="21">PC12</text>
+<text x="46.858275" y="29.004565625" size="0.6096" layer="21">PD1</text>
+<text x="46.58959375" y="21.779534375" size="0.6096" layer="21">PD2</text>
+<text x="48.786975" y="29.004565625" size="0.6096" layer="21">ShiftEn</text>
+<text x="48.55205" y="21.7844625" size="0.6096" layer="21">ShiftClk</text>
+<text x="50.9706875" y="29.917821875" size="0.6096" layer="21">ShiftDat</text>
+<text x="52.202434375" y="22.481159375" size="0.6096" layer="21" rot="R270">SonarPwm</text>
 <wire x1="52.58313125" y1="29.7028375" x2="52.58313125" y2="29.004134375" width="0.4064" layer="121"/>
-<text x="53.590721875" y="29.079215625" size="0.6096" layer="121">Cam_M</text>
-<text x="54.238421875" y="22.486721875" size="0.6096" layer="121" rot="R270">CAN_RX</text>
-<text x="55.800015625" y="29.870375" size="0.6096" layer="121">CAN_TX</text>
+<text x="53.590721875" y="29.079215625" size="0.6096" layer="21">Cam_M</text>
+<text x="54.238421875" y="22.486721875" size="0.6096" layer="21" rot="R270">CAN_RX</text>
+<text x="55.800015625" y="29.870375" size="0.6096" layer="21">CAN_TX</text>
 <wire x1="57.516725" y1="28.7806375" x2="57.531634375" y2="28.7806375" width="0.4064" layer="121"/>
 <wire x1="57.531634375" y1="28.7806375" x2="57.531634375" y2="29.422546875" width="0.4064" layer="121"/>
-<text x="62.472696875" y="26.281075" size="0.6096" layer="121" rot="R90">SCL1</text>
-<text x="58.917940625" y="20.668996875" size="0.6096" layer="121" rot="R90">SDA1</text>
-<text x="61.935334375" y="24.556109375" size="0.6096" layer="121">CAM_2</text>
+<text x="62.472696875" y="26.281075" size="0.6096" layer="21" rot="R90">SCL1</text>
+<text x="58.917940625" y="20.668996875" size="0.6096" layer="21" rot="R90">SDA1</text>
+<text x="61.935334375" y="24.556109375" size="0.6096" layer="21">CAM_2</text>
 <text x="62.608078125" y="28.33639375" size="0.6096" layer="121">PE2</text>
-<text x="68.886578125" y="29.684903125" size="0.6096" layer="121" rot="R90">PE3</text>
-<text x="68.940325" y="32.085509375" size="0.6096" layer="121" rot="R90">PE5</text>
-<text x="61.405415625" y="32.263790625" size="0.6096" layer="121" rot="R90">PE4</text>
-<text x="61.48750625" y="34.662159375" size="0.6096" layer="121" rot="R90">PE6</text>
-<text x="61.318621875" y="38.194284375" size="0.6096" layer="121" rot="R90">+3V3</text>
-<wire x1="61.09048125" y1="38.088696875" x2="61.0655875" y2="38.088696875" width="0.2032" layer="121"/>
-<wire x1="61.0655875" y1="38.088696875" x2="61.0655875" y2="36.969165625" width="0.2032" layer="121"/>
-<wire x1="61.0655875" y1="36.969165625" x2="62.060759375" y2="36.969165625" width="0.2032" layer="121"/>
-<wire x1="62.060759375" y1="36.969165625" x2="62.060759375" y2="36.9816125" width="0.2032" layer="121"/>
-<wire x1="61.115346875" y1="40.377490625" x2="61.115346875" y2="41.347771875" width="0.2032" layer="121"/>
-<wire x1="61.115346875" y1="41.347771875" x2="61.71245" y2="41.347771875" width="0.2032" layer="121"/>
-<wire x1="61.71245" y1="41.347771875" x2="61.71245" y2="41.322878125" width="0.4064" layer="121"/>
-<text x="61.517378125" y="41.97675" size="0.6096" layer="121" rot="R90">PC13</text>
-<text x="61.569090625" y="44.45749375" size="0.6096" layer="121" rot="R90">PC15</text>
-<text x="61.569090625" y="47.359696875" size="0.6096" layer="121" rot="R90">PH1</text>
-<text x="68.70743125" y="44.506440625" size="0.6096" layer="121" rot="R90">OSC_In</text>
-<text x="68.817059375" y="41.94693125" size="0.6096" layer="121" rot="R90">PC14</text>
-<text x="68.886578125" y="39.5739125" size="0.6096" layer="121" rot="R90">GND</text>
-<text x="60.931934375" y="54.891103125" size="0.6096" layer="121" rot="R270">+3V3</text>
-<wire x1="61.200665625" y1="55.034434375" x2="61.200665625" y2="56.4855375" width="0.2032" layer="121"/>
-<wire x1="61.200665625" y1="56.4855375" x2="60.358628125" y2="56.4855375" width="0.2032" layer="121"/>
-<wire x1="61.29025" y1="52.490521875" x2="61.29025" y2="51.093165625" width="0.2032" layer="121"/>
-<wire x1="61.29025" y1="51.093165625" x2="60.39444375" y2="51.093165625" width="0.2032" layer="121"/>
-<text x="58.43714375" y="49.027765625" size="0.6096" layer="121" rot="R90">GND</text>
-<text x="54.3233625" y="48.910771875" size="0.6096" layer="121" rot="R90">MDC</text>
-<text x="49.90355625" y="49.97800625" size="0.6096" layer="121">CRS_DV</text>
-<text x="49.057509375" y="48.735565625" size="0.6096" layer="121" rot="R90">RXD1</text>
-<text x="45.18385625" y="49.946609375" size="0.6096" layer="121">TXD0</text>
-<text x="42.317315625" y="54.192425" size="0.6096" layer="121" rot="R90">TXD1</text>
-<text x="47.78166875" y="57.04088125" size="0.6096" layer="121" rot="R90">TXEN</text>
-<text x="49.248059375" y="57.02109375" size="0.6096" layer="121" rot="R90">RXD0</text>
-<text x="49.75428125" y="57.14331875" size="0.6096" layer="121">REFCLK</text>
+<text x="68.886578125" y="29.684903125" size="0.6096" layer="21" rot="R90">PE3</text>
+<text x="68.940325" y="32.104534375" size="0.6096" layer="21" rot="R90">PE5</text>
+<text x="61.405415625" y="32.263790625" size="0.6096" layer="21" rot="R90">PE4</text>
+<text x="61.48750625" y="34.662159375" size="0.6096" layer="21" rot="R90">PE6</text>
+<text x="61.451821875" y="36.8149125" size="0.6096" layer="21" rot="R90">+3V3</text>
+<text x="61.517378125" y="41.97675" size="0.6096" layer="21" rot="R90">PC13</text>
+<text x="61.569090625" y="44.45749375" size="0.6096" layer="21" rot="R90">PC15</text>
+<text x="61.569090625" y="47.359696875" size="0.6096" layer="21" rot="R90">PH1</text>
+<text x="68.70743125" y="44.506440625" size="0.6096" layer="21" rot="R90">OSC_In</text>
+<text x="68.817059375" y="41.94693125" size="0.6096" layer="21" rot="R90">PC14</text>
+<text x="68.886578125" y="39.5739125" size="0.6096" layer="21" rot="R90">GND</text>
+<text x="60.669375" y="55.895775" size="0.6096" layer="21" rot="R270">+3V3</text>
+<text x="58.43714375" y="49.027765625" size="0.6096" layer="21" rot="R90">GND</text>
+<text x="54.3233625" y="48.910771875" size="0.6096" layer="21" rot="R90">MDC</text>
+<text x="49.90355625" y="49.97800625" size="0.6096" layer="21">CRS_DV</text>
+<text x="49.057509375" y="48.735565625" size="0.6096" layer="21" rot="R90">RXD1</text>
+<text x="45.18385625" y="49.946609375" size="0.6096" layer="21">TXD0</text>
+<text x="42.317315625" y="54.192425" size="0.6096" layer="21" rot="R90">TXD1</text>
+<text x="47.78166875" y="57.04088125" size="0.6096" layer="21" rot="R90">TXEN</text>
+<text x="49.248059375" y="57.02109375" size="0.6096" layer="21" rot="R90">RXD0</text>
+<text x="49.75428125" y="57.14331875" size="0.6096" layer="21">REFCLK</text>
 <text x="53.208403125" y="57.170090625" size="0.6096" layer="121">MDIO</text>
+<text x="34.646109375" y="44.86618125" size="1.016" layer="22" rot="MR0">PD12</text>
+<text x="34.509075" y="47.57773125" size="1.016" layer="22" rot="MR0">PD9</text>
+<text x="34.722815625" y="42.793640625" size="1.016" layer="22" rot="MR0">PD14</text>
+<text x="34.295359375" y="39.5549375" size="1.016" layer="22" rot="MR0">PC6</text>
+<text x="34.509075" y="37.401296875" size="1.016" layer="22" rot="MR0">PC8</text>
+<text x="34.574834375" y="34.9352625" size="1.016" layer="22" rot="MR0">SCL2</text>
+<text x="32.9492875" y="32.6335375" size="1.016" layer="22" rot="MR0">PA11</text>
+<text x="37.506934375" y="27.957525" size="1.016" layer="22" rot="MR0">+3V3</text>
+<text x="40.74269375" y="28.016709375" size="1.016" layer="22" rot="MR0">GND</text>
+<text x="43.445709375" y="30.22648125" size="1.016" layer="22" rot="MR0">PA9</text>
+<text x="43.6824625" y="35.9481875" size="1.016" layer="22" rot="MR0">SDA2</text>
+<text x="43.287875" y="37.368759375" size="1.016" layer="22" rot="MR0">PC7</text>
+<text x="44.215178125" y="39.854759375" size="1.016" layer="22" rot="MR0">PD15</text>
+<text x="44.25465" y="42.22236875" size="1.016" layer="22" rot="MR0">PD13</text>
+<text x="44.057340625" y="45.24105625" size="1.016" layer="22" rot="MR0">PD11</text>
+<text x="43.46544375" y="47.33244375" size="1.016" layer="22" rot="MR0">PD8</text>
+<text x="42.112946875" y="58.0587875" size="1.016" layer="22" rot="MR180">TXD1</text>
+<text x="44.69881875" y="50.670003125" size="1.016" layer="22" rot="MR180">TXD0</text>
+<text x="48.39294375" y="47.430309375" size="1.016" layer="22" rot="MR90">RXD1</text>
+<text x="50.921996875" y="46.46406875" size="1.016" layer="22" rot="MR90">CRS_DV</text>
+<text x="53.50786875" y="47.771328125" size="1.016" layer="22" rot="MR90">MDC</text>
+<text x="58.460309375" y="51.2390125" size="1.016" layer="22" rot="MR270">GND</text>
+<text x="59.091678125" y="51.160071875" size="1.016" layer="22" rot="MR180">+3V3</text>
+<text x="56.44784375" y="56.98045625" size="1.016" layer="22" rot="MR0">MDIO</text>
+<text x="49.7396" y="59.03236875" size="1.016" layer="22" rot="MR180">REFCLK</text>
+<text x="49.3879375" y="60.58186875" size="1.016" layer="22" rot="MR270">RXD0</text>
+<text x="48.089134375" y="60.499675" size="1.016" layer="22" rot="MR270">TXEN</text>
+<text x="60.84765625" y="46.89838125" size="1.016" layer="22" rot="MR90">PH1</text>
+<text x="61.354384375" y="43.88276875" size="1.016" layer="22" rot="MR90">PC15</text>
+<text x="61.41875" y="40.61033125" size="1.016" layer="22" rot="MR90">PC13</text>
+<text x="62.457609375" y="40.34663125" size="1.016" layer="22" rot="MR270">+3V3</text>
+<text x="62.31300625" y="36.453215625" size="1.016" layer="22" rot="MR270">PE6</text>
+<text x="61.64706875" y="33.970365625" size="1.016" layer="22" rot="MR270">PE4</text>
+<text x="64.582953125" y="28.207740625" size="1.016" layer="22" rot="MR0">PE2</text>
+<text x="68.246446875" y="29.3583625" size="1.016" layer="22" rot="MR90">PE3</text>
+<text x="68.28591875" y="32.02190625" size="1.016" layer="22" rot="MR90">PE5</text>
+<text x="68.0251625" y="41.026690625" size="1.016" layer="22" rot="MR180">GND</text>
+<text x="71.022084375" y="42.6061625" size="1.016" layer="22" rot="MR0">PC14</text>
+<text x="68.021734375" y="46.017409375" size="1.016" layer="22" rot="MR180">OSC_IN</text>
+<text x="61.74701875" y="28.468040625" size="1.016" layer="22" rot="MR0">CAN_TX</text>
+<text x="68.113934375" y="26.550796875" size="1.016" layer="22" rot="MR0">SCL1</text>
+<text x="68.6729125" y="24.430025" size="1.016" layer="22" rot="MR0">CAM2</text>
+<text x="58.7192625" y="23.38545" size="1.016" layer="22" rot="MR270">SDA1</text>
+<text x="55.2942" y="23.193653125" size="1.016" layer="22" rot="MR270">CAN_RX</text>
+<text x="53.0884625" y="22.98816875" size="1.016" layer="22" rot="MR270">Sonar_PWM</text>
+<text x="50.604546875" y="22.983290625" size="1.016" layer="22" rot="MR270">ShiftClk</text>
+<text x="47.858959375" y="22.818903125" size="1.016" layer="22" rot="MR270">PD2</text>
+<text x="43.600803125" y="22.4901" size="1.016" layer="22" rot="MR180">PD0</text>
+<text x="40.214015625" y="22.0955375" size="1.016" layer="22" rot="MR90">Temp</text>
+<text x="41.11825625" y="26.64945" size="1.016" layer="22" rot="MR0">PC11</text>
+<text x="44.735215625" y="28.901746875" size="1.016" layer="22" rot="MR90">PC12</text>
+<text x="47.283521875" y="28.951071875" size="1.016" layer="22" rot="MR90">PD1</text>
+<text x="49.601678125" y="28.244140625" size="1.016" layer="22" rot="MR90">ShiftEn</text>
+<text x="52.1993125" y="28.85241875" size="1.016" layer="22" rot="MR90">ShiftDat</text>
+<text x="54.698290625" y="28.244140625" size="1.016" layer="22" rot="MR90">Cam_M</text>
+<text x="68.0886125" y="35.928478125" size="1.016" layer="22" rot="MR180">GND</text>
+<text x="68.3451" y="38.23688125" size="1.016" layer="22" rot="MR180">GND</text>
+<text x="68.0854375" y="48.62388125" size="1.016" layer="22" rot="MR180">GND</text>
+<text x="57.0397625" y="56.368821875" size="1.016" layer="22" rot="MR90">GND</text>
+<text x="60.737853125" y="53.31561875" size="0.6096" layer="21" rot="R270">+3V3</text>
+<text x="61.48986875" y="39.488034375" size="0.6096" layer="21" rot="R90">+3V3</text>
+<text x="68.886578125" y="37.11120625" size="0.6096" layer="21" rot="R90">GND</text>
+<text x="68.957596875" y="34.790584375" size="0.6096" layer="21" rot="R90">GND</text>
 </plain>
 <libraries>
 <library name="SparkFun-Passives">
