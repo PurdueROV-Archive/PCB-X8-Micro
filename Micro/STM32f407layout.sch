@@ -15772,6 +15772,7 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 <part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$8" library="Connectors" deviceset="HSC8PART-60" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="Q3" library="DiscreteComponents" deviceset="ASF*" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15951,6 +15952,7 @@ Connection</text>
 <instance part="U$8" gate="G$2" x="556.26" y="134.62"/>
 <instance part="U$8" gate="G$3" x="683.26" y="134.62"/>
 <instance part="P+1" gate="1" x="441.96" y="147.32"/>
+<instance part="Q3" gate="G$1" x="53.34" y="167.64"/>
 </instances>
 <busses>
 </busses>
@@ -17838,6 +17840,21 @@ Connection</text>
 <pinref part="U$1" gate="G$1" pin="PA4"/>
 <wire x1="439.42" y1="490.22" x2="452.12" y2="490.22" width="0.1524" layer="91"/>
 <label x="441.96" y="490.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="Q3" gate="G$1" pin="OE"/>
+<pinref part="Q3" gate="G$1" pin="FO"/>
+<wire x1="66.04" y1="172.72" x2="66.04" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="167.64" x2="66.04" y2="154.94" width="0.1524" layer="91"/>
+<junction x="66.04" y="167.64"/>
+<wire x1="66.04" y1="154.94" x2="40.64" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="VCC"/>
+<pinref part="Q3" gate="G$1" pin="GND"/>
+<wire x1="40.64" y1="172.72" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="154.94" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
+<junction x="40.64" y="162.56"/>
 </segment>
 </net>
 </nets>
