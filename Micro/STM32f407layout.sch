@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15655,6 +15655,8 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="DiffPair" width="0.254" drill="0">
+</class>
 </classes>
 <parts>
 <part name="U$1" library="Other" deviceset="STM32F4" device=""/>
@@ -17638,7 +17640,7 @@ Connection</text>
 <pinref part="R21" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="TD+" class="0">
+<net name="DIFF_TD+" class="1">
 <segment>
 <wire x1="1008.38" y1="165.1" x2="1003.3" y2="165.1" width="0.1524" layer="91"/>
 <label x="1003.3" y="165.1" size="1.778" layer="95"/>
@@ -17652,7 +17654,7 @@ Connection</text>
 <label x="914.4" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RD+" class="0">
+<net name="DIFF_RD+" class="1">
 <segment>
 <wire x1="1038.86" y1="165.1" x2="1043.94" y2="165.1" width="0.1524" layer="91"/>
 <label x="1038.86" y="165.1" size="1.778" layer="95"/>
@@ -17666,7 +17668,7 @@ Connection</text>
 <label x="914.4" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RD-" class="0">
+<net name="DIFF_RD-" class="1">
 <segment>
 <label x="1038.86" y="160.02" size="1.778" layer="95"/>
 <pinref part="U$7" gate="G$1" pin="RD-"/>
@@ -17708,7 +17710,7 @@ Connection</text>
 <junction x="911.86" y="127"/>
 </segment>
 </net>
-<net name="TD-" class="0">
+<net name="DIFF_TD-" class="1">
 <segment>
 <pinref part="U$4" gate="G$1" pin="TXN"/>
 <wire x1="899.16" y1="144.78" x2="919.48" y2="144.78" width="0.1524" layer="91"/>
